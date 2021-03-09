@@ -50,6 +50,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - This project was inspired by the [Microverse](https://www.microverse.org/) for the  program
+- Thanks to the author[PNGTREE](https://pngtree.com/so/ancient/)
 - Thanks to Photo by Emre Can from Pexels
 
 
