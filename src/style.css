@@ -2,15 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
 
-@font-face {
-	font-family: 'Roboto-Regular';
-	src: url('../fonts/Roboto-Regular.eot');
-	src: local('☺'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype'), url('../fonts/Roboto-Regular.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-
 body{font-family: 'Roboto-Mono';background: #f5f5f5;}
 header .navbar{padding: .5rem 0;}
 header nav.navbar .navbar-brand{color:#fff;}
