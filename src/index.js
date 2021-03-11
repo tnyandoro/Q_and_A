@@ -1,20 +1,17 @@
 import _ from 'lodash';
 import './style.css';
 
-let addTaskInput;
-addTaskInput = document.createElementId("addtaskinput");
-let addTaskBtn;
+let addtaskinput = document.getElementById("addtaskinput");
+let addtaskbtn = document.getElementById("addtaskbtn");
 
-addTaskBtn = document.createElementId("addtaskinput");
-
-addTaskBtn.addEventListener("click", function(e) {
-  addTaskInputVal = addTaskInput.value;
-  let todoTask = localStorage.getItem("localTask");
-  if(todoTask === null){
-      taskObject = [];
-    }else{
-      taskObject = JSON.parse(todoTask);
+addtaskbtn.addEventListener("click", function(){
+  addtaskinputval = addtaskinput.value;
+  let webtask = localStorage.getItem("localtask");
+        if(webtask == null){
+            taskObj = [];
+        } else{
+      taskObj = JSON.parse(todoTask);
     }
-   taskObject.push(addTaskInputVal);
-   localStorage.setItem("localTask", JSON.stringify(taskObject));
+   taskObj.push(addtaskinputVal);
+   localStorage.setItem("localtask", JSON.stringify(taskObj));
 })

@@ -1,0 +1,4 @@
+ <input type="text" class="form-control" placeholder="Enter your task description" id="" /><br>
+                <div class="input-group date" data-provide="datepicker"></div>
+                  <input type="date" id="dueDate" name="dueDate" placeholder=" TaskDue Date"class="form-control" data-provide="date datepicker"/><br>
+                </div>
