@@ -6,8 +6,8 @@ let addtaskbtn = document.getElementById("addtaskbtn");
 
 addtaskbtn.addEventListener("click", function(){
   addtaskinputval = addtaskinput.value;
-  let webtask = localStorage.getItem("localtask");
-  if(webtask == null){
+  let todoTask = localStorage.getItem("localtask");
+  if(todoTask == null){
       taskObj = [];
   }else{
       taskObj = JSON.parse(todoTask);
@@ -15,11 +15,13 @@ addtaskbtn.addEventListener("click", function(){
    taskObj.push(addtaskinputVal);
    localStorage.setItem("localtask", JSON.stringify(taskObj));
 })
-function showtask(){
-  let webtask = localStorage.getItem("localtask");
-  if(webtask == null){
+function showTask(){
+  let todoTask = localStorage.getItem("localtask");
+  if(todoTask == null){
       taskObj = [];
   }else{
       taskObj = JSON.parse(todoTask);
     }
 }
+let html = '';
+let addedtasklist = getElementById("addedtasklist");
