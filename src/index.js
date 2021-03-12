@@ -38,4 +38,6 @@ todoDiv.appendChild(trashButton);
 
 //attach final Todo
 todoList.appendChild(todoDiv);
+// Clear todo inputvalue 
+todoInput.value = "";
 }
