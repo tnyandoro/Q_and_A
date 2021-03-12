@@ -22,11 +22,20 @@ function addTodo(event) {
 const newTodo = document.createElement('li');
 newTodo.innerText = 'Hey';
 newTodo.classList.add('todo-item');
-
-// Append a child of the todoDiv 
 todoDiv.appendChild(newTodo);
 
 // Create the buttons for edit completed delete button
 const completedButton = document.createElement('button');
 completedButton.innerHTML = '<i class="fas fa-check"></i>'
+completedButton.classList.add("complete-btn")
+todoDiv.appendChild(completedButton);
+
+// Create the buttons for edit completed delete button
+const trashButton = document.createElement('button');
+trashButton.innerHTML = '<i class="fas fa-trash"></i>';
+trashButton.classList.add("trash-btn");
+todoDiv.appendChild(trashButton);
+
+// APPEND TO LIST  
+todoList.appendChild(todoDiv);
 }
