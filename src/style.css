@@ -111,9 +111,10 @@ select {
 }
 select {
     color:#eb6641;
-    width: 10rem;
+    width: 8rem;
     cursor: pointer;
-    padding: 1rem;
+    padding: 3rem;
+    margin-left: 1rem;
 }
 .select::after {
     content: "\25BC";
@@ -123,4 +124,10 @@ select {
     right: 0;
     padding: 1rem;
     pointer-events: none;
+    transition:0.3s ease;
+}
+
+.select:hover::after {
+    background:#fff;
+    color: #eb6641;
 }
