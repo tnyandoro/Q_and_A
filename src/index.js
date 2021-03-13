@@ -48,7 +48,11 @@ function deleteCheck(e) {
   // remove from todo
   if (item.classList[0] === 'trash-btn') {
     const todo = item.parentElement;
-    todo.remove();
+    todo.classList.add("fall");
+    todo.addEventListener('transitionend', () => {
+      todo.remove();
+    })
+    
   }
   // check item
   if (item.classList[0] === 'complete-btn'){
