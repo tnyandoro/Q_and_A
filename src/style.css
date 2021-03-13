@@ -93,5 +93,27 @@ list-style: none;
 }
 .fall {
     transform: translateY(8rem) rotateZ(20deg);
-    opacity: ;
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+select {
+    color:#eb6641;
+    width: 10rem;
+    cursor: pointer;
+}
+.select::after {
+    content: "\25BC";
 }
