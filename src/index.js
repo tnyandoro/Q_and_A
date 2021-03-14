@@ -5,14 +5,16 @@ import './style.css';
 const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
+const filterOption = document.querySelector(".filter-todo");
 
 // My Event Listeners 
 todoButton.addEventListener("click", addTodo);
 todoList.addEventListener('click', deleteCheck);
+filterOption.addEventListener
 
 // My Functions 
 
-function addTodo(e) {
+const addTodo = e => {
   // Prevent form from submitting  
   e.preventDefault();
   // Create ToDo Div
@@ -41,9 +43,10 @@ todoDiv.appendChild(trashButton);
 todoList.appendChild(todoDiv);
 // Clear todo inputvalue 
 todoInput.value = "";
-}
+};
+
 // Delete 
-function deleteCheck(e) {
+const deleteCheck = e => {
   const item = e.target;
   // remove from todo
   if (item.classList[0] === 'trash-btn') {
@@ -59,6 +62,10 @@ function deleteCheck(e) {
     const todo = item.parentElement;
     todo.classList.toggle('completed');
   }
-}
+};
 
+function filterTodo(e) {
+  const todos = todoList.childNodes;
+  console.log(todos);
+}
 
