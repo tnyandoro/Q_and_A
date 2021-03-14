@@ -72,7 +72,9 @@ switch (e.target.value){
     break;
     case "completed":
       if(todo.classList.contains("completed")){
-        
+        todo.sytle.display = "flex";
+      }else{
+        todo.sytle.display = "none";
       }
 
 }
