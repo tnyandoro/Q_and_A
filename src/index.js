@@ -78,13 +78,26 @@ function filterTodo(e) {
           todo.style.display = "none";
         }
         break;
-      case "uncompleted":
-        if (!todo.classList.contains("completed")) {
-          todo.style.display = "flex";
-        } else {
-          todo.style.display = "none";
-        }
+        case "uncompleted":
+          if(!todo.classList.contains("completed")) {
+            todo.style.display = "flex";
+          } else {
+            todo.style.display = "none";
+          }
+          break;
     }
   });
 }
 
+function saveLocalTodos(todos) {
+   // Check the status of your local storage
+   let todos = [];
+   if (localStorage.getItem('todos') === null) {
+     todos = [];
+   }else{
+     todos = JSON.parse(localStorage.getItem('todos'));
+   }
+   todos.push(todo);
+   localStorage.setItem('todos', JSON.stringify(todos));
+  };
+ 
