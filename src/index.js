@@ -27,6 +27,9 @@ newTodo.innerText = todoInput.value;
 newTodo.classList.add("todo-item");
 todoDiv.appendChild(newTodo);
 
+// Add todo to local storageName
+saveLocalTodos();
+
 // Create the buttons for edit completed delete button
 const completedButton = document.createElement("button");
 completedButton.innerHTML = `<i class="fas fa-check"></i>`;
@@ -89,7 +92,7 @@ function filterTodo(e) {
   });
 }
 
-function saveLocalTodos(todos) {
+function saveLocalTodos(todo) {
    // Check the status of your local storage
    let todos = [];
    if (localStorage.getItem('todos') === null) {
