@@ -10,11 +10,11 @@ const filterOption = document.querySelector(".filter-todo");
 // My Event Listeners 
 todoButton.addEventListener("click", addTodo);
 todoList.addEventListener('click', deleteCheck);
-filterOption.addEventListener("click",filterTodo);
+filterOption.addEventListener("click", filterTodo);
 
 // My Functions 
 
-const addTodo = e => {
+function addTodo(e) {
   // Prevent form from submitting  
   e.preventDefault();
   // Create ToDo Div
@@ -43,10 +43,10 @@ todoDiv.appendChild(trashButton);
 todoList.appendChild(todoDiv);
 // Clear todo inputvalue 
 todoInput.value = "";
-};
+}
 
 // Delete 
-const deleteCheck = e => {
+function deleteCheck(e) {
   const item = e.target;
   // remove from todo
   if (item.classList[0] === 'trash-btn') {
@@ -58,14 +58,24 @@ const deleteCheck = e => {
     
   }
   // check item
-  if (item.classList[0] === 'complete-btn'){
+  if (item.classList[0] === "complete-btn"){
     const todo = item.parentElement;
-    todo.classList.toggle('completed');
+    todo.classList.toggle("completed");
   }
-};
+}
 
 function filterTodo(e) {
   const todos = todoList.childNodes;
-  console.log(todos);
+  todos.forEach-((todo) => {
+switch (e.target.value){
+  case "all":
+    break;
+    case "completed":
+      if(todo.classList.contains("completed")){
+        
+      }
+
+}
+  });
 }
 
