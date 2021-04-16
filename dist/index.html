@@ -2,33 +2,41 @@
 <html>
   <head>
     <meta charset="utf-8" />
-   <title>The ToDo List</title>  
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-   <!-- Google fonts -->
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>The ToDo List</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-     <header>
-       <h1>Tendai's ToDo List</h1>
-     </header>
-     <form>
+    <header>
+      <h1>Tendai's ToDo List</h1>
+    </header>
+    <form>
       <input type="text" class="todo-input" />
       <button class="todo-button" type="submit">
         <i class="fas fa-plus-square"></i>
-      </button> 
+      </button>
       <div class="select">
         <select name="todos" class="filter-todo">
           <option value="all">All</option>
           <option value="completed">Completed</option>
           <option value="uncompleted">Uncompleted</option>
         </select>
-      </div>       
-     </form> 
-     <div class="todo-container">
+      </div>
+    </form>
+    <div class="todo-container">
       <ul class="todo-list"></ul>
-    </div> 
+    </div>
 
-   <script src="bundle.js"></script>      
+    <script src="bundle.js"></script>
   </body>
 </html>
